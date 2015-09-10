@@ -21,7 +21,107 @@
             android:background="#ffe3ff45"
             android:measureWithLargestChild="false"
             android:id="@+id/radio"
-            android:layout_weight="2">
+            android:layout_weight="2"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left">
+
+                <ToggleButton
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="AM/FM button"
+                    android:id="@+id/AMFM"
+                    android:textOff="AM"
+                    android:textOn="FM"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="160dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="1"
+                    android:id="@+id/preset1" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="2"
+                    android:id="@+id/preset2" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="3"
+                    android:id="@+id/preset3" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="4"
+                    android:id="@+id/preset4" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="5"
+                    android:id="@+id/preset5" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="6"
+                    android:id="@+id/preset6" />
+
+                <ToggleButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Power"
+                    android:id="@+id/power"
+                    android:textOn="On"
+                    android:textOff="Off"
+                    android:singleLine="false"
+                    android:layout_marginLeft="240dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <SeekBar
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:rotation="270"
+                    android:id="@+id/tuner"
+                    android:splitTrack="false"
+                    android:mirrorForRtl="false"
+                    android:nestedScrollingEnabled="false"
+                    android:longClickable="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="000.00"
+                    android:id="@+id/radioDisplay"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:background="#fffc9bff"
+                    android:editable="false"
+                    android:elegantTextHeight="false"
+                    android:textSize="200dp"
+                    android:textColor="#ff405fff"
+                    android:singleLine="false"
+                    android:layout_marginLeft="-50dp" />
+            </LinearLayout>
 
         </LinearLayout>
 
