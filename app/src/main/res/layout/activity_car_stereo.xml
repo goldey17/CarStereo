@@ -39,43 +39,51 @@
                     android:textOn="FM"
                     android:layout_marginRight="50dp"
                     android:layout_marginLeft="160dp"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="amfmclicked" />
 
                 <Button
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:text="1"
-                    android:id="@+id/preset1" />
+                    android:id="@+id/preset1"
+                    android:onClick="preset" />
 
                 <Button
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:text="2"
-                    android:id="@+id/preset2" />
+                    android:id="@+id/preset2"
+                    android:onClick="preset" />
 
                 <Button
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:text="3"
-                    android:id="@+id/preset3" />
+                    android:id="@+id/preset3"
+                    android:onClick="preset" />
 
                 <Button
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:text="4"
-                    android:id="@+id/preset4" />
+                    android:id="@+id/preset4"
+                    android:onClick="preset" />
 
                 <Button
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:text="5"
-                    android:id="@+id/preset5" />
+                    android:id="@+id/preset5"
+                    android:onClick="preset" />
 
                 <Button
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:text="6"
-                    android:id="@+id/preset6" />
+                    android:id="@+id/preset6"
+                    android:onClick="preset"
+                    android:nestedScrollingEnabled="false" />
 
                 <ToggleButton
                     android:layout_width="50dp"
@@ -85,7 +93,8 @@
                     android:textOn="On"
                     android:textOff="Off"
                     android:singleLine="false"
-                    android:layout_marginLeft="240dp" />
+                    android:layout_marginLeft="240dp"
+                    android:onClick="powerButtonClick" />
 
             </LinearLayout>
 
@@ -118,7 +127,7 @@
                     android:background="#fffc9bff"
                     android:editable="false"
                     android:elegantTextHeight="false"
-                    android:textSize="200dp"
+                    android:textSize="150dp"
                     android:textColor="#ff405fff"
                     android:singleLine="false"
                     android:layout_marginLeft="-40dp"
